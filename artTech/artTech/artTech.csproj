@@ -1,0 +1,108 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Font\San Francisco Text Bold.ttf" />
+    <None Remove="Resources\Font\San Francisco Text Light.ttf" />
+    <None Remove="Resources\Font\San Francisco Text Medium.ttf" />
+    <None Remove="Resources\Font\San Francisco Text Regular.ttf" />
+    <None Remove="Resources\Image\addPhoto.jpg" />
+    <None Remove="Resources\Image\appIcon.ico" />
+    <None Remove="Resources\Image\Case1.jpg" />
+    <None Remove="Resources\Image\Case2.jpg" />
+    <None Remove="Resources\Image\Case3.jpg" />
+    <None Remove="Resources\Image\Config\ComputerCase.jpg" />
+    <None Remove="Resources\Image\Config\ComputerCase.png" />
+    <None Remove="Resources\Image\Config\ComputerCase2.png" />
+    <None Remove="Resources\Image\Config\CoolingSystem.jpg" />
+    <None Remove="Resources\Image\Config\CPU.jpg" />
+    <None Remove="Resources\Image\Config\GPU.jpg" />
+    <None Remove="Resources\Image\Config\mohertboard.jpg" />
+    <None Remove="Resources\Image\Config\motherboard.jpg" />
+    <None Remove="Resources\Image\Config\powerUnit.jpg" />
+    <None Remove="Resources\Image\Config\RAM.jpg" />
+    <None Remove="Resources\Image\Config\SSD.jpg" />
+    <None Remove="Resources\Image\cpu1.jpg" />
+    <None Remove="Resources\Image\important\home.jpg" />
+    <None Remove="Resources\Image\keyBoard.jpg" />
+    <None Remove="Resources\Image\keyBoard2.jpg" />
+    <None Remove="Resources\Image\keyBoard3.jpg" />
+    <None Remove="Resources\Image\ssd1.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Image\addPhoto.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Image\Config\ComputerCase.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="4.2.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Font\San Francisco Text Bold.ttf" />
+    <Resource Include="Resources\Font\San Francisco Text Light.ttf" />
+    <Resource Include="Resources\Font\San Francisco Text Medium.ttf" />
+    <Resource Include="Resources\Font\San Francisco Text Regular.ttf" />
+    <Resource Include="Resources\Image\appIcon.ico">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Image\Case1.jpg" />
+    <Resource Include="Resources\Image\Case2.jpg" />
+    <Resource Include="Resources\Image\Case3.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Image\Config\CoolingSystem.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Image\Config\CPU.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Image\Config\GPU.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Image\Config\motherboard.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Image\Config\powerUnit.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Image\Config\RAM.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Image\Config\SSD.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Image\cpu1.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Image\important\home.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Image\keyBoard.jpg" />
+    <Resource Include="Resources\Image\keyBoard2.jpg" />
+    <Resource Include="Resources\Image\keyBoard3.jpg" />
+    <Resource Include="Resources\Image\ssd1.jpg" />
+  </ItemGroup>
+
+</Project>

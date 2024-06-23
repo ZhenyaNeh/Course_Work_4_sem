@@ -1,0 +1,58 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:v="clr-namespace:System;assembly=mscorlib"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- RUS Language-->
+    <!-- Main window -->
+    <v:String x:Key="m_MainTitle_TextBlock">MAC</v:String>
+    <v:String x:Key="m_LogOrReg_Button">Войдете в Аккаунт</v:String>
+    <v:String x:Key="m_Catalog_ComboBox">Каталог</v:String>
+    <v:String x:Key="m_CPUcase_TextBlock">CPU</v:String>
+    <v:String x:Key="m_GPUcase_TextBlock">GPU</v:String>
+    <v:String x:Key="m_MemoryCase_TextBlock">Память</v:String>
+    <v:String x:Key="m_AddNewItem_Button">Добавить элемент</v:String>
+    <v:String x:Key="m_Search_TextBox">🔍︎ Поиск</v:String>
+    <v:String x:Key="m_Language_TextBlock">Язык</v:String>
+    <v:String x:Key="m_LanguageID_TextBlock">(EN)▾</v:String>
+    <v:String x:Key="m_LanguageButtonRU_TextBlock">Русский</v:String>
+    <v:String x:Key="m_LanguageButtonEN_TextBlock">Англиский</v:String>
+    <v:String x:Key="m_AboutAutor_TextBlock">При поддержке: NEV | VK Автора</v:String>
+
+    <!-- Add New PC Config -->
+    <v:String x:Key="a_AddPCTitle_TextBlock">Добавить Новую Конфигурацию ПК</v:String>
+    <v:String x:Key="a_Prise_TextBox">Цена</v:String>
+    <v:String x:Key="a_DiscriptionTitle_TextBlock">Описание</v:String>
+    <v:String x:Key="a_DiscriptionSecondTitle_TextBlock">Базовые характеристики ПК</v:String>
+    <v:String x:Key="a_CPU_TextBox">Процессор</v:String>
+    <v:String x:Key="a_GPU_TextBox">Видео карта</v:String>
+    <v:String x:Key="a_DiscriptionThirdTitle_TextBlock">Некоторое Описание о Продукте</v:String>
+    <v:String x:Key="a_DiscriptionRU_TextBox">Описание (RU)</v:String>
+    <v:String x:Key="a_DiscriptionEN_TextBox">Описание (EN)</v:String>
+    <v:String x:Key="a_AddItem_Button">Добавить Элемент</v:String>
+
+    <!-- View PC Config -->
+    <v:String x:Key="v_ViewPCTitle_TextBlock">Просмотр Конфигурации ПК</v:String>
+    <v:String x:Key="v_Prise_TextBox">Цена:</v:String>
+    <v:String x:Key="v_DiscriptionTitle_TextBlock">Описание</v:String>
+    <v:String x:Key="v_DiscriptionSecondTitle_TextBlock">Базовые характеристики ПК</v:String>
+    <v:String x:Key="v_CPU_TextBox">Процессор:</v:String>
+    <v:String x:Key="v_GPU_TextBox">Видео карта:</v:String>
+    <v:String x:Key="v_DiscriptionThirdTitle_TextBlock">Некоторое Описание о Продукте</v:String>
+    
+    <!-- Registration / LogIn User -->
+    <v:String x:Key="r_RegTitle_TextBlock">Регистрация Пользователя</v:String>
+    <v:String x:Key="r_FillFormTitle_TextBlock">Заполните Форму</v:String>
+    <v:String x:Key="r_WriteName_TextBox">Введете Свое Имя</v:String>
+    <v:String x:Key="r_WritePassword_TextBox">Введете Свой Пароль</v:String>
+    <v:String x:Key="r_RepitPassword_TextBox">Повторите Свой Пароль</v:String>
+    <v:String x:Key="r_WriteEmail_TextBox">Введете Свой Email</v:String>
+    <v:String x:Key="r_Reg_Button">Регистрация</v:String>
+    <v:String x:Key="r_IfAcc_Button">если у вас уже есть аккаунт</v:String>
+
+    <v:String x:Key="l_LogInTitle_TextBlock">Войти в Аккаунт</v:String>
+    <v:String x:Key="l_FillFormTitle_TextBlock">Заполните Форму</v:String>
+    <v:String x:Key="l_WriteName_TextBox">Введете Свое Имя</v:String>
+    <v:String x:Key="l_WritePassword_TextBox">Введете Свой Пароль</v:String>
+    <v:String x:Key="l_LogIn_Button">Войти</v:String>
+
+</ResourceDictionary>

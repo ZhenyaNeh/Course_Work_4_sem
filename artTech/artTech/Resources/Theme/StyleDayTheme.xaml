@@ -1,0 +1,124 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes">
+
+    <!-- Back Ground -->
+    <Style x:Key="LightThemeBackground_Grid" TargetType="{x:Type Grid}">
+        <Setter Property="Background" Value="White"/>
+    </Style>
+
+    <!-- Text Block -->
+    <Style x:Key="TextInImage" TargetType="{x:Type TextBlock}">
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontFamily" Value="San Francisco Text Bold"/>
+    </Style>
+
+    <Style x:Key="TextBlock_StyleFonts_BlackBold" TargetType="{x:Type TextBlock}">
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="FontFamily" Value="San Francisco Text Bold"/>
+    </Style>
+
+    <Style x:Key="TextBlock_StyleFonts_BlackMedium" TargetType="{x:Type TextBlock}">
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="FontFamily" Value="San Francisco Text Medium"/>
+    </Style>
+
+    <Style x:Key="TextBlock_StyleFonts_BlackRegular" TargetType="{x:Type TextBlock}">
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="FontFamily" Value="San Francisco Text Regular"/>
+    </Style>
+
+    <Style x:Key="TextBlock_StyleFonts_BlackLight" TargetType="{x:Type TextBlock}">
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="FontFamily" Value="San Francisco Text Light"/>
+    </Style>
+
+    <Style x:Key="TextBlock_RegularStyle" TargetType="{x:Type TextBlock}">
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="FontFamily" Value="San Francisco Text Regular"/>
+    </Style>
+    
+    <!-- Rectangle -->
+    <Style x:Key="RectangleThemeStyle"  TargetType="{x:Type Rectangle}">
+        <Setter Property="Fill" Value="#888"/>
+    </Style>
+
+    <!-- Border -->
+    <Style x:Key="BorderThemeStyle"  TargetType="{x:Type Border}">
+        <Setter Property="Background" Value="#FFEBE9E9"/>
+    </Style>
+
+    <!-- Button -->
+
+    <Style x:Key="FlatButtonDesign_RegularStyle" BasedOn="{StaticResource MaterialDesignFlatButton}" TargetType="{x:Type Button}">
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="materialDesign:RippleAssist.Feedback" Value="Black"/>
+        <Setter Property="materialDesign:HintAssist.Foreground" Value="Black"/>
+        <Setter Property="materialDesign:TextFieldAssist.UnderlineBrush" Value="Black"/>
+        <Setter Property="FontFamily" Value="San Francisco Text Regular"/>
+    </Style>
+    <!-- button.HoverBackground = Brushes.Transparent; -->
+
+    <Style x:Key="Button_FontStyle" BasedOn="{StaticResource MaterialDesignFlatDarkBgButton}" TargetType="{x:Type Button}">
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontFamily" Value="San Francisco Text Medium"/>
+    </Style>
+
+    <Style x:Key="FlatButtonDesign_MediumStyle" BasedOn="{StaticResource MaterialDesignFlatButton}" TargetType="{x:Type Button}">
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="materialDesign:RippleAssist.Feedback" Value="Black"/>
+        <Setter Property="materialDesign:HintAssist.Foreground" Value="Black"/>
+        <Setter Property="materialDesign:TextFieldAssist.UnderlineBrush" Value="Black"/>
+        <Setter Property="FontFamily" Value="San Francisco Text Medium"/>
+    </Style>
+    
+    <!-- Line -->
+    <Style x:Key="LineStyle" TargetType="{x:Type Line}">
+        <Setter Property="Stroke" Value="#ABABAB"/>
+        <Setter Property="StrokeThickness" Value="2"/>
+    </Style>
+
+
+    <!-- Combo Box -->
+    <Style x:Key="CatalogComboBox_RegularStyle" BasedOn="{StaticResource MaterialDesignFloatingHintComboBox}" TargetType="{x:Type ComboBox}">
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="materialDesign:HintAssist.Foreground" Value="Black"/>
+        <Setter Property="materialDesign:TextFieldAssist.UnderlineBrush" Value="Black"/>
+        <Setter Property="FontFamily" Value="San Francisco Text Regular"/>
+    </Style>
+
+    <!-- Text Box -->
+    <Style x:Key="FloatingHintTextBox_RegularStyle" BasedOn="{StaticResource MaterialDesignFloatingHintTextBox}" TargetType="{x:Type TextBox}">
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="CaretBrush" Value="Black"/>
+        <Setter Property="materialDesign:HintAssist.Foreground" Value="Black"/>
+        <Setter Property="materialDesign:TextFieldAssist.UnderlineBrush" Value="Black"/>
+        <Setter Property="FontFamily" Value="San Francisco Text Regular"/>
+    </Style>
+
+    <Style x:Key="FloatingHintTextBox_MediumStyle" BasedOn="{StaticResource MaterialDesignFloatingHintTextBox}" TargetType="{x:Type TextBox}">
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="CaretBrush" Value="Black"/>
+        <Setter Property="materialDesign:HintAssist.Foreground" Value="Black"/>
+        <Setter Property="materialDesign:TextFieldAssist.UnderlineBrush" Value="Black"/>
+        <Setter Property="FontFamily" Value="San Francisco Text Medium"/>
+    </Style>
+
+    <Style x:Key="FloatingHintPasswordBox_MediumStyle" BasedOn="{StaticResource MaterialDesignFloatingHintPasswordBox}" TargetType="{x:Type PasswordBox}">
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="CaretBrush" Value="Black"/>
+        <Setter Property="materialDesign:HintAssist.Foreground" Value="Black"/>
+        <Setter Property="materialDesign:TextFieldAssist.UnderlineBrush" Value="Black"/>
+        <Setter Property="FontFamily" Value="San Francisco Text Medium"/>
+    </Style>
+
+    <Style x:Key="OutlinedTextBox_RegularStyle" BasedOn="{StaticResource MaterialDesignOutlinedTextBox}" TargetType="{x:Type TextBox}">
+        <Setter Property="Foreground" Value="Black"/>
+        <Setter Property="CaretBrush" Value="Black"/>
+        <Setter Property="materialDesign:HintAssist.Foreground" Value="Black"/>
+        <Setter Property="materialDesign:TextFieldAssist.UnderlineBrush" Value="Black"/>
+        <Setter Property="FontFamily" Value="San Francisco Text Regular"/>
+    </Style>
+
+
+</ResourceDictionary>

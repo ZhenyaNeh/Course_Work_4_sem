@@ -1,0 +1,191 @@
+﻿<UserControl x:Class="artTech.Components.Motherboard_Component"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:artTech.Components"
+             mc:Ignorable="d" 
+             d:DesignHeight="1000" d:DesignWidth="800">
+    <Grid Background="White">
+        <Border
+            Width="250"
+            Height="60"
+            VerticalAlignment="Top"
+            Padding="5"
+            BorderBrush="LightGray"
+            BorderThickness="2"
+            CornerRadius="3">
+            <Grid>
+                <TextBox
+                    x:Name="MotherboardCPUSpport"
+                    materialDesign:HintAssist.Hint="Motherboard CPU Spport"
+                    FontSize="14"
+                    TextWrapping="Wrap"
+                    Style="{DynamicResource FloatingHintTextBox_RegularStyle}" TextChanged="MotherboardCPUSpport_TextChanged"/>
+
+            </Grid>
+        </Border>
+
+        <Border
+            Width="250"
+            VerticalAlignment="Top"
+            Height="60"
+            Margin="0 70 0 0"
+            Padding="5"
+            BorderBrush="LightGray"
+            BorderThickness="2"
+            CornerRadius="3">
+            <Grid>
+                <TextBox 
+                    x:Name="MotherboardSocket"
+                    materialDesign:HintAssist.Hint="Motherboard Socket"
+                    FontSize="14"
+                    TextWrapping="Wrap"
+                    Style="{DynamicResource FloatingHintTextBox_RegularStyle}" TextChanged="MotherboardSocket_TextChanged"/>
+
+            </Grid>
+        </Border>
+
+        <Border
+            Width="250"
+            VerticalAlignment="Top"
+            Height="60"
+            Margin="0 140 0 0"
+            Padding="5"
+            BorderBrush="LightGray"
+            BorderThickness="2"
+            CornerRadius="3">
+            <Grid>
+                <TextBox
+                    x:Name="MotherboardFormFactor"
+                    materialDesign:HintAssist.Hint="Motherboard Form Factor"
+                    FontSize="14"
+                    TextWrapping="Wrap"
+                    Style="{DynamicResource FloatingHintTextBox_RegularStyle}" TextChanged="MotherboardFormFactor_TextChanged"/>
+
+            </Grid>
+        </Border>
+
+        <Border
+            Width="250"
+            VerticalAlignment="Top"
+            Height="60"
+            Margin="0 210 0 0"
+            Padding="5"
+            BorderBrush="LightGray"
+            BorderThickness="2"
+            CornerRadius="3">
+            <Grid>
+                <TextBox 
+                    x:Name="MotherboardMemorySupport"
+                    materialDesign:HintAssist.Hint="Motherboard Memory Support"
+                    FontSize="14"
+                    TextWrapping="Wrap"
+                    Style="{DynamicResource FloatingHintTextBox_RegularStyle}" TextChanged="MotherboardMemorySupport_TextChanged"/>
+
+            </Grid>
+        </Border>
+
+        <Border
+            Width="250"
+            VerticalAlignment="Top"
+            Height="60"
+            Margin="0 280 0 0"
+            Padding="5"
+            BorderBrush="LightGray"
+            BorderThickness="2"
+            CornerRadius="3">
+            <Grid>
+                <TextBox 
+                    x:Name="NumberOfRAMSlots"
+                    materialDesign:HintAssist.Hint="Number Of RAM Slots"
+                    FontSize="14"
+                    TextWrapping="Wrap"
+                    Style="{DynamicResource FloatingHintTextBox_RegularStyle}" TextChanged="NumberOfRAMSlots_TextChanged"/>
+
+            </Grid>
+        </Border>
+
+        <Border
+            Width="250"
+            VerticalAlignment="Top"
+            Height="60"
+            Margin="0 350 0 0"
+            Padding="5"
+            BorderBrush="LightGray"
+            BorderThickness="2"
+            CornerRadius="3">
+            <Grid>
+                <TextBox 
+                    x:Name="MaximumRAMCapacity"
+                    materialDesign:HintAssist.Hint="Maximum RAM Capacity"
+                    FontSize="14"
+                    TextWrapping="Wrap"
+                    Style="{DynamicResource FloatingHintTextBox_RegularStyle}" TextChanged="MaximumRAMCapacity_TextChanged"/>
+
+            </Grid>
+        </Border>
+
+        <Border
+            Width="250"
+            VerticalAlignment="Top"
+            Height="60"
+            Margin="0 420 0 0"
+            Padding="5"
+            BorderBrush="LightGray"
+            BorderThickness="2"
+            CornerRadius="3">
+            <Grid>
+                <TextBox 
+                    x:Name="MaximumRAMFrequency"
+                    materialDesign:HintAssist.Hint="Maximum RAM Frequency"
+                    FontSize="14"
+                    TextWrapping="Wrap"
+                    Style="{DynamicResource FloatingHintTextBox_RegularStyle}" TextChanged="MaximumRAMFrequency_TextChanged"/>
+
+            </Grid>
+        </Border>
+
+        <Border
+            Width="250"
+            VerticalAlignment="Top"
+            Height="60"
+            Margin="0 490 0 0"
+            Padding="5"
+            BorderBrush="LightGray"
+            BorderThickness="2"
+            CornerRadius="3">
+            <Grid>
+                <TextBox 
+                    x:Name="NumberOfM2Slots"
+                    materialDesign:HintAssist.Hint="Number Of M.2 Slots"
+                    FontSize="14"
+                    TextWrapping="Wrap"
+                    Style="{DynamicResource FloatingHintTextBox_RegularStyle}" TextChanged="NumberOfM2Slots_TextChanged"/>
+
+            </Grid>
+        </Border>
+
+        <Border
+            Width="250"
+            VerticalAlignment="Top"
+            Height="60"
+            Margin="0 560 0 0"
+            Padding="5"
+            BorderBrush="LightGray"
+            BorderThickness="2"
+            CornerRadius="3">
+            <Grid>
+                <TextBox 
+                    x:Name="NumberOfSATA3Slots"
+                    materialDesign:HintAssist.Hint="Number Of SATA3 Slots"
+                    FontSize="14"
+                    TextWrapping="Wrap"
+                    Style="{DynamicResource FloatingHintTextBox_RegularStyle}" TextChanged="NumberOfSATA3Slots_TextChanged"/>
+
+            </Grid>
+        </Border>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,81 @@
+﻿<Page x:Class="artTech.Pages.LogInPage"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:artTech.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="LogInPage">
+
+    <Grid Background="White" Margin="0 90 0 0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+        <Image
+            x:Name="ImageSrc"
+            Grid.Column="0"
+            Width="350"
+            VerticalAlignment="Top"
+            Source="/Resources/Image/keyBoard2.jpg"/>
+
+        <Grid
+            Grid.Column="1"
+            Margin="40 0 0 0">
+            <TextBlock
+                x:Name="Title"
+                FontSize="34"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Left"
+                Style="{DynamicResource TextBlock_StyleFonts_BlackBold}">
+                <Underline>
+                    Log In
+                </Underline>
+            </TextBlock>
+
+            <TextBox
+                x:Name="Login"
+                FontSize="22"
+                materialDesign:HintAssist.Hint="Write Your LogIn"
+                Margin="0 90 0 0"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Left"
+                Style="{DynamicResource FloatingHintTextBox_MediumStyle}" TextChanged="Login_TextChanged"/>
+
+            <PasswordBox
+                x:Name="Password"
+                FontSize="22"
+                materialDesign:HintAssist.Hint="Write Your Password"
+                Margin="0 150 0 0"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Left"
+                Style="{StaticResource FloatingHintPasswordBox_MediumStyle}"/>
+
+            <TextBlock
+                x:Name="RegistrationPage"
+                Text="If you don't have an account"
+                FontSize="12"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Left"
+                Margin="0 240 0 0"
+                MouseDown="RegistrationPage_MouseDown"
+                Style="{DynamicResource TextBlock_StyleFonts_BlackMedium}"
+                Cursor="Hand"/>
+
+            <Button
+                x:Name="LoginButton"
+                Content="Log In"
+                Background="Black"
+                FontSize="18"
+                BorderBrush="Transparent"
+                Width="90"
+                Margin="0 320 0 0"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Left"
+                Style="{DynamicResource Button_FontStyle}" Click="LoginButton_Click"/>
+        </Grid>
+    </Grid>
+</Page>

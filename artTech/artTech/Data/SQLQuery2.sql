@@ -1,0 +1,1 @@
+﻿insert SSDs values('SSD Samsung 980 1TB', 'D:\University\Course_Work\artTech\artTech\Resources\Image\ssd2.jpg', 150, 'M.2', '1TB')

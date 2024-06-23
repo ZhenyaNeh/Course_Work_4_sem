@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Components\Computer_Component.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\CoolingSystem_Component.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\CPU_Component.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\GPU_Component.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\Motherboard_Component.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\PowerUnit_Component.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\RAM_Component.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\SpecificationComponent.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\SSD_Component.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Components\UserComponent.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\AddItemPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\AdminPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Catalog.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\ComparisonMode.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Configurator.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\HomePage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\LogInPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\RegistrationPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\UserPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\ViewComparisonMode.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\ViewItemConfigPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\ViewItemPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\ViewItemPage_PC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Components\Computer_Component.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\CoolingSystem_Component.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\CPU_Component.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\GPU_Component.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\Motherboard_Component.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\PowerUnit_Component.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\RAM_Component.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\SpecificationComponent.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\SSD_Component.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Components\UserComponent.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\AddItemPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\AdminPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Catalog.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\ComparisonMode.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Configurator.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\HomePage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\LogInPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\RegistrationPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\UserPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\ViewComparisonMode.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\ViewItemConfigPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\ViewItemPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\ViewItemPage_PC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\Language\Language.en-EN.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\Language\Language.ru-RU.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\Theme\StyleDayTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Resources\Theme\StyleNightTheme.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

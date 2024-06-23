@@ -1,0 +1,342 @@
+﻿<Page x:Class="artTech.Pages.Configurator"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:artTech.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="890"
+      Title="Configurator">
+
+    <Page.Resources>
+        <Style x:Key="HoverGrowBorderStyle" TargetType="Border">
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Trigger.EnterActions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleX)"
+                                                 To="1.1" Duration="0:0:0.2"/>
+                                <DoubleAnimation Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleY)"
+                                                 To="1.1" Duration="0:0:0.2"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </Trigger.EnterActions>
+                    <Trigger.ExitActions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimation Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleX)"
+                                                 To="1.0" Duration="0:0:0.2"/>
+                                <DoubleAnimation Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleY)"
+                                                 To="1.0" Duration="0:0:0.2"/>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </Trigger.ExitActions>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Page.Resources>
+
+    <Grid Background="White" Margin="0 35 0 0" MouseDown="Grid_MouseDown">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid 
+            Grid.Column="0"
+            HorizontalAlignment="Left">
+
+            <Border
+                x:Name="Border_CoolingSystem"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Left"
+                Width="88"
+                Height="99"
+                Padding="2"
+                CornerRadius="3"
+                BorderThickness="2"
+                Style="{StaticResource HoverGrowBorderStyle}"
+                RenderTransformOrigin="0.5,0.5"
+                MouseDown="BorderThickness_MouseDown">
+                <Border.RenderTransform>
+                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                </Border.RenderTransform>
+                <Image
+                     x:Name="CoolingSystem_Image"
+                    VerticalAlignment="Center"
+                    Width="80"
+                    Source="/Resources/Image/Config/CoolingSystem.jpg"/>
+            </Border>
+
+            <Border
+                x:Name="Border_RAM"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Left"
+                Width="120"
+                Height="58"
+                Padding="2"
+                CornerRadius="3"
+                BorderThickness="2"
+                Margin="120,20,0,0"
+                Style="{StaticResource HoverGrowBorderStyle}"
+                RenderTransformOrigin="0.5,0.5"
+                MouseDown="BorderThickness_MouseDown">
+                <Border.RenderTransform>
+                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                </Border.RenderTransform>
+                <Image
+                     x:Name="RAM_Image"
+                    VerticalAlignment="Center"
+                    Width="110"
+                    Source="/Resources/Image/Config/RAM.jpg"/>
+            </Border>
+
+            <Border
+                x:Name="Border_CPU"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Left"
+                Padding="2"
+                CornerRadius="3"
+                BorderThickness="2"
+                Margin="20,120,0,0"
+                Style="{StaticResource HoverGrowBorderStyle}"
+                RenderTransformOrigin="0.5,0.5"
+                MouseDown="BorderThickness_MouseDown">
+                <Border.RenderTransform>
+                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                </Border.RenderTransform>
+                <Image
+                    x:Name="CPU_Image"
+                    VerticalAlignment="Center"
+                    Width="40"
+                    Source="/Resources/Image/Config/CPU.jpg"/>
+            </Border>
+
+            <Border
+                x:Name="Border_SSD"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Left"
+                Width="68"
+                Height="80  "
+                Padding="2"
+                CornerRadius="3"
+                BorderThickness="2"
+                Margin="10,200,0,0"
+                Style="{StaticResource HoverGrowBorderStyle}"
+                RenderTransformOrigin="0.5,0.5"
+                MouseDown="BorderThickness_MouseDown">
+                <Border.RenderTransform>
+                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                </Border.RenderTransform>
+                <Image
+                    x:Name="SSD_Image"
+                    Width="60"
+                    VerticalAlignment="Center"
+                    Source="/Resources/Image/Config/SSD.jpg"/>
+            </Border>
+
+            <Border
+                x:Name="Border_MotherBoard"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Left"
+                Width="168"
+                Height="209"
+                Padding="2"
+                CornerRadius="3"
+                BorderThickness="2"
+                Margin="100,100,0,0"    
+                Style="{StaticResource HoverGrowBorderStyle}"
+                RenderTransformOrigin="0.5,0.5"
+                MouseDown="BorderThickness_MouseDown">
+                <Border.RenderTransform>
+                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                </Border.RenderTransform>
+                <Image
+                     x:Name="Motherboard_Image"
+                    VerticalAlignment="Center"
+                    Width="160"
+                    Source="/Resources/Image/Config/motherboard.jpg"/>
+            </Border>
+
+            <Border
+                x:Name="Border_PowerUnit"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Left"
+                Padding="2"
+                CornerRadius="3"
+                BorderThickness="2"
+                Margin="300,120,0,0"
+                Style="{StaticResource HoverGrowBorderStyle}"
+                RenderTransformOrigin="0.5,0.5"
+                MouseDown="BorderThickness_MouseDown">
+                <Border.RenderTransform>
+                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                </Border.RenderTransform>
+                <Image
+                     x:Name="PowerUnit_Image"
+                    VerticalAlignment="Center"
+                    Width="90"
+                    Source="/Resources/Image/Config/powerUnit.jpg"/>
+            </Border>
+
+            <Border
+                x:Name="Border_GPU"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Left"
+                Width="150"
+                Height="75"
+                Padding="2"
+                CornerRadius="3"
+                BorderThickness="2"
+                Margin="280,225,0,0"
+                Style="{StaticResource HoverGrowBorderStyle}"
+                RenderTransformOrigin="0.5,0.5"
+                MouseDown="BorderThickness_MouseDown">
+                <Border.RenderTransform>
+                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                </Border.RenderTransform>
+                <Image
+                    x:Name="GPU_Image"
+                    Width="140"
+                    VerticalAlignment="Center"
+                    Source="/Resources/Image/Config/GPU.jpg"/>
+            </Border>
+
+            <Border
+                x:Name="Border_ComputerCase"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Left"
+                Padding="2"
+                CornerRadius="3"
+                BorderThickness="2" 
+                Margin="110,335,0,0"
+                Style="{StaticResource HoverGrowBorderStyle}"
+                RenderTransformOrigin="0.5,0.5"
+                MouseDown="BorderThickness_MouseDown">
+                <Border.RenderTransform>
+                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                </Border.RenderTransform>
+                <Image
+                     x:Name="ComputerCase_Image"
+                    Width="140"
+                    VerticalAlignment="Center"
+                    Source="/Resources/Image/Config/ComputerCase.jpg"/>
+            </Border>
+
+            <Line X1="43" Y1="99" X2="43" Y2="120" Style="{DynamicResource LineStyle}"/>
+            <Line X1="183" Y1="78" X2="183" Y2="100" Style="{DynamicResource LineStyle}"/>
+            <Line X1="68" Y1="145" X2="100" Y2="145" Style="{DynamicResource LineStyle}"/>
+            <Line X1="78" Y1="240" X2="100" Y2="240" Style="{DynamicResource LineStyle}"/>
+            <Line X1="268" Y1="160" X2="300" Y2="160" Style="{DynamicResource LineStyle}"/>
+            <Line X1="268" Y1="260" X2="280" Y2="260" Style="{DynamicResource LineStyle}"/>
+            <Line X1="180" Y1="309" X2="180" Y2="325" Style="{DynamicResource LineStyle}"/>
+        </Grid>
+
+        <Grid
+            Grid.Column="1">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+            
+            <TextBlock
+                x:Name="Title"
+                Grid.Row="0"
+                FontSize="32"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Left"
+                Margin="10 0 0 0"
+                Style="{DynamicResource TextBlock_StyleFonts_BlackBold}">
+                <Underline>
+                    Create Your Configuration
+                </Underline>
+            </TextBlock>
+
+            <Frame
+                Grid.Row="1"
+                Width="auto"
+                x:Name="ConfigFrame"
+                Margin="0 10 0 10"/>
+
+            <TextBlock
+                x:Name="HintTitle"
+                Grid.Row="1"   
+                Text="Click on any component to select it"
+                FontSize="26"
+                Width="280"
+                TextWrapping="Wrap"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Left"
+                Margin="10 80 0 0"
+                Style="{DynamicResource TextBlock_StyleFonts_BlackBold}"/>
+
+            <StackPanel
+                VerticalAlignment="Center"
+                Grid.Row="2">
+                <Grid>
+                    <Border
+                        Width="305"
+                        Height="7"
+                        CornerRadius="5"
+                        Padding="1"
+                        Margin="10 0 0 0"
+                        HorizontalAlignment="Left"
+                        BorderBrush="LightGray"
+                        BorderThickness="1">
+                        <ProgressBar
+                            x:Name="ProgerssBas"
+                            Value="0"
+                            Minimum="0"
+                            Maximum="100"
+                            Width="300"
+                            Height="5"
+                            HorizontalAlignment="Left"
+                            Margin="1 0 0 0"
+                            Style="{DynamicResource MaterialDesignLinearProgressBar}"
+                            BorderThickness="0" Foreground="Black" BorderBrush="#FFABABAB" Background="#FFABABAB"/>
+                    </Border>
+
+                    <TextBlock
+                        x:Name="ProcentValue"
+                        Text="0%"
+                        Margin="330 0 0 0"
+                        Style="{DynamicResource TextBlock_StyleFonts_BlackBold}"/>
+                </Grid>
+            </StackPanel>
+
+            <TextBlock
+                Grid.Row="3"  
+                x:Name="TotalPrice"
+                FontSize="26"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Left"
+                Margin="10 0 0 0"
+                Style="{DynamicResource TextBlock_StyleFonts_BlackBold}">
+                <Underline>
+                    Total Price: 0$
+                </Underline>
+            </TextBlock>
+
+            <Button
+                Grid.Row="3"
+                x:Name="ButtonSave"
+                Content="Save"
+                Background="Black"
+                BorderBrush="Transparent"
+                Width="70"
+                VerticalAlignment="Top"
+                HorizontalAlignment="Right"
+                ToolTip="all components must be filled"
+                Style="{DynamicResource Button_FontStyle}" Click="ButtonSave_Click"
+                />
+
+        </Grid>
+
+        
+    </Grid>
+</Page>
